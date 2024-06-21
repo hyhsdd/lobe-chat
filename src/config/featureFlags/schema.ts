@@ -26,8 +26,8 @@ export const DEFAULT_FEATURE_FLAGS: IFeatureFlags = {
 
   language_model_settings: true,
 
-  openai_api_key: true,
-  openai_proxy_url: true,
+  openai_api_key: false,
+  openai_proxy_url: false,
 
   create_session: true,
   edit_agent: true,
@@ -35,7 +35,7 @@ export const DEFAULT_FEATURE_FLAGS: IFeatureFlags = {
   dalle: true,
 
   check_updates: true,
-  welcome_suggest: true,
+  welcome_suggest: false,
 };
 
 export const mapFeatureFlagsEnvToState = (config: IFeatureFlags) => {
